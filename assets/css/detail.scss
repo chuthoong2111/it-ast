@@ -1,0 +1,306 @@
+// Grid adjustments for half fluid image, half text layouts
+
+// Add class .half-fluid to outer section container
+.half-fluid {
+
+  // Add .left-half or .right-half class to the image column depending on which side it goes on
+  // On mobile, images stack, break out of the container, and go full width
+  .item {
+    margin-bottom: 2rem;
+  }
+
+  // Background image
+  .image {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 992px) {
+    .image {
+      margin-bottom: 0;
+    }
+
+    .item {
+      margin-bottom: 0;
+    }
+
+    .item:nth-child(2n+1) {
+      .row {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+// When compiling with BS Sass files, use: @include media-breakpoint-up(lg)
+// Large devices (desktops, 992px and up)
+
+//   destination
+
+.postcard {
+  :hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  position: relative;
+
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+
+    @media (min-width: 992px) {
+      width: 59%;
+    }
+
+    overflow: hidden;
+  }
+
+  img {
+    transition: all 2.1s ease;
+    width: 100%;
+    margin: 0;
+    line-height: 0;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .content {
+    width: 88%;
+    height: auto;
+    transform: translate(-50%, 0);
+    margin-top: -6%;
+    left: 50%;
+    position: relative;
+
+    @media (min-width: 992px) {
+      transform: translate(0, -50%);
+      right: 0;
+      top: 50%;
+      position: absolute;
+      width: 55%;
+      height: 80%;
+      margin-top: 0;
+      left: auto;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    text-align: left;
+    z-index: 2;
+    padding: 2rem;
+    background-color: #fff;
+
+    .h4 {
+      color: #444 !important;
+      text-align: left;
+      width: 100%;
+    }
+
+    .txt {
+      text-align: justify;
+    }
+  }
+}
+
+.card-hotel {
+  .img-fluid {
+    transition: all 2.1s ease;
+  }
+
+  :hover {
+    .img-fluid {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.line-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.5rem;
+  max-height: 6rem;
+  overflow: hidden;
+}
+
+.line-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.5rem;
+  max-height: 4.5rem;
+  overflow: hidden;
+}
+
+.line-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.8rem;
+  max-height: 1.8rem;
+  overflow: hidden;
+}
+
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax_container {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+.glass {
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+    0 6px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.glass:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -20px;
+  box-shadow: inset 0 0 500px rgba(255, 255, 255, .4);
+  filter: blur(24px);
+  z-index: -1;
+}
+
+.form-select {
+  border: 1px solid rgba(170, 170, 170, .3);
+  border-radius: 0;
+}
+
+.title-blue {
+  color: #0A36AF;
+  text-transform: uppercase;
+}
+
+.title-red {
+  color: #da2032;
+  text-transform: uppercase;
+}
+
+.bg-light2 {
+  background: #f2f2f2;
+}
+
+.nav-pills .nav-link {
+  margin-right: 1rem;
+}
+
+.nav-pills .nav-link:hover {
+  background: #fff;
+  color: #0A36AF;
+}
+.bgr-support{
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  background-position: 50% 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+  &::after{
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    background: #0A36AF;
+    opacity: .6;
+    z-index: -1;
+  }
+}
+.gradient{
+  background-image: linear-gradient(to bottom right, #ffd9d9, #c8edff);
+  
+}
+.card.des {
+  border:.5px solid #fff;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+}
+.card.des .card-image img {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.card.des .card-image {
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card.des .card-image:hover img {
+    -webkit-transform: scale(1.2) rotate(-7deg);
+    -moz-transform: scale(1.2) rotate(-7deg);
+    -ms-transform: scale(1.2) rotate(-7deg);
+    -o-transform: scale(1.2) rotate(-7deg);
+    transform: scale(1.2) rotate(-7deg);
+}
+.card-content{
+  position: absolute;
+  box-shadow:  1px 4px 12px rgba(0, 0, 0, 0.15);
+  top: 86%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 4px 20px;
+}
+.bg-black{
+  background-color: rgba(0, 0, 0, 0.8);;
+}
+.top-0{
+  z-index: 2;
+}
+.top-5{
+  top: 5%;
+  z-index: 2;
+}
