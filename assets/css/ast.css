@@ -19203,7 +19203,7 @@ h2,
 
 .bg-tour {
     background: url(../images/bgr-tour.svg) no-repeat 100% 0;
-    background-size: 20% auto
+    background-size: 16% auto
 }
 
 .container_foto {
@@ -19793,10 +19793,11 @@ h2,
 }
 
 .btn-news {
-    background: #00059F;
-    color: #ccc;
+    background: #ccc;
+    color: #082D92;
     width: 100%;
     display: block;
+    font-weight: bold;
     height: 54px;
     font-size: 18px;
     line-height: 1
