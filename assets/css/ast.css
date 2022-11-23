@@ -5438,7 +5438,7 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
+    border: 0;
     border-radius: .25rem
 }
 
@@ -19602,7 +19602,7 @@ h2,
 
 .footer {
     color: #ccc;
-    background: #082D92;
+    background: #323747;
     font-size: 15px
 }
 
@@ -19616,7 +19616,7 @@ h2,
 
 .footer .form-control {
     color: #ccc;
-    background-color: #0B2A80
+    background-color: #2b3143
 }
 
 .footer .control-label {
@@ -19677,7 +19677,7 @@ h2,
 .bot-foot {
     font-size: 13px;
     padding: 2.5em 0 1em;
-    background: #0B2A80;
+    background: #2b3143;
     border-bottom: 3px solid #e65050
 }
 
@@ -19722,7 +19722,7 @@ h2,
 }
 
 .newsletter {
-    background: #0B2A80;
+    background: #2b3143;
     padding: 10px 0 0
 }
 
@@ -19794,10 +19794,10 @@ h2,
 
 .btn-news {
     background: #ccc;
-    color: #082D92;
+    color: #666;
     width: 100%;
     display: block;
-    font-weight: bold;
+    font-weight: 500;
     height: 54px;
     font-size: 18px;
     line-height: 1
