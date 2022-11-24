@@ -422,3 +422,32 @@
     text-overflow: ellipsis;
     white-space: normal;
 }
+.card.bg-dark-overlay-5{
+  min-height: 450px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .gradient-transparent{
+    display: flex ;
+    justify-content: center ;
+  }
+}
+.detail{
+  img{
+    width: auto !important;
+    height:auto !important;
+    max-width:100%;
+  }
+}
+.icon-md{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba($color: #0A36AF, $alpha: .5) ;
+  &:hover{
+    background-color: #0A36AF;
+  }
+}

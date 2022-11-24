@@ -354,4 +354,34 @@
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   white-space: normal;
+}
+
+.card.bg-dark-overlay-5 {
+  min-height: 450px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card.bg-dark-overlay-5 .gradient-transparent {
+  display: flex;
+  justify-content: center;
+}
+
+.detail img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+}
+
+.icon-md {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 54, 175, 0.5);
+}
+.icon-md:hover {
+  background-color: #0A36AF;
 }/*# sourceMappingURL=detail.css.map */
